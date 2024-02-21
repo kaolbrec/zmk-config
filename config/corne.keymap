@@ -42,12 +42,12 @@
                 Lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | ESC  |
-// | CTRL |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
+// | CTRL | Ins |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     |     |   | DEL |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT  &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp ESC
-   &kp LCTRL &trans   &trans  &trans   &trans   &trans    &kp LEFT  &kp DOWN &kp UP          &kp RIGHT &trans &trans
+   &kp LCTRL &kp INS  &trans  &trans   &trans   &trans    &kp LEFT  &kp DOWN &kp UP          &kp RIGHT &trans &trans
    &kp LSHFT &trans   &trans  &trans   &trans   &trans    &trans    &trans   &trans &trans   &trans &trans
                            &kp LGUI &trans &trans    &kp DEL  &trans   &kp RALT
                         >;
@@ -55,13 +55,13 @@
                 Raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | ESC  |
-// | CTRL | Home| PgUp|     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | CTRL | Home| PgUp| Prnt|     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT | End | PgDn|     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | BSP |   |     |     | ALT |
                         bindings = <
    &kp TAB  &kp N1     &kp N2 &kp N3   &kp N4   &kp N5     &kp N6    &kp N7    &kp N8   &kp N9   &kp N0   &kp ESC
-   &kp HOME &kp PGUP   &trans &trans   &trans   &trans     &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE
-   &kp END  &kp PGDN   &trans &trans   &trans   &trans     &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE &kp TILDE
+   &kp HOME &kp PG_UP  &kp PSCRN &trans   &trans   &trans     &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE
+   &kp END  &kp PG_DN  &trans &trans   &trans   &trans     &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE &kp TILDE
                               &kp LGUI &trans   &kp BSPC   &trans &trans &kp RALT
                         >;
                 };
