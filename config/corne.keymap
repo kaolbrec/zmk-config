@@ -42,39 +42,39 @@
                 Lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | ESC  |
-// | CTRL | F1  | F2  | F3  |     |     |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT | F4  | F5  | F6  |     |     |   |     |     |     |     |     |      |
+// | CTRL |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     |     |   | DEL |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT  &kp HASH &kp DLLR &kp PRCNT  &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp ESC
-   &kp LCTRL &kp F1 &kp F2 &kp F3   &trans &trans    &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT &kp F4 &kp F5 &kp F6   &trans &trans    &trans   &trans   &trans &trans    &trans &trans
+   &kp  TAB  &kp EXCL &kp AT  &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp ESC
+   &kp LCTRL &trans   &trans  &trans   &trans   &trans    &kp LEFT  &kp DOWN &kp UP          &kp RIGHT &trans &trans
+   &kp LSHFT &trans   &trans  &trans   &trans   &trans    &trans    &trans   &trans &trans   &trans &trans
                            &kp LGUI &trans &trans    &kp DEL  &trans   &kp RALT
                         >;
                 };
                 Raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | ESC  |
-// | CTRL | F7  | F8  | F9  |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT | F10 | F11 | F12 |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// | CTRL | Home| PgUp|     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT | End | PgDn|     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | BSP |   |     |     | ALT |
                         bindings = <
-   &kp TAB   &kp N1 &kp N2 &kp N3   &kp N4 &kp N5    &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp ESC
-   &kp LCTRL &kp F7   &kp F8  &kp F9   &trans   &trans     &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &kp F10  &kp F11 &kp F12  &trans   &trans     &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &kp TAB  &kp N1     &kp N2 &kp N3   &kp N4   &kp N5     &kp N6    &kp N7    &kp N8   &kp N9   &kp N0   &kp ESC
+   &kp HOME &kp PGUP   &trans &trans   &trans   &trans     &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE
+   &kp END  &kp PGDN   &trans &trans   &trans   &trans     &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE &kp TILDE
                               &kp LGUI &trans   &kp BSPC   &trans &trans &kp RALT
                         >;
                 };
                 Adjust_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |     |     |     |     |   |     |     |     |     |     | EXTP |
+// |  F1  | F2  | F3  | F4  | F5  | F6  |   | F7  | F8  | F9  | F10 | F11 | F12  |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     |      |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     |     |   |     |     | ALT |
                         bindings = <
-   &kp TAB    &trans       &trans       &trans       &trans       &trans        &trans &trans &trans &trans &trans &ext_power EP_TOG
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans &trans &trans &trans &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans        &trans &trans &trans &trans &trans &trans
+   &kp F1     &kp F2       &kp F3       &kp F4       &kp F5       &kp F6        &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans &trans &trans &trans  &trans  &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans        &trans &trans &trans &trans  &trans  &trans
                                         &kp LGUI     &trans       &trans        &trans &trans &kp RALT
                         >;
                 };
